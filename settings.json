@@ -1,0 +1,987 @@
+{
+  "Config": {
+    "BotDiscordToken": "OTgyMDQyNTU0ODIyNDM4OTUy.GJRBR_.fCfTvK2D9V6ntF5k1Nkky8a9NOic1dMcfzkRe0",
+    "BotDiscordName": "ThunderED",
+    "BotDiscordGame": "With Your Mom",
+    "BotDiscordCommandPrefix": "!",
+    "DiscordGuildId": 794260497737580604,
+    "DiscordAllowGeneralCommandsOnSecondaryGuilds": true,
+    "DiscordAllowSystemCommandsOnSecondaryGuilds": false,
+    "DiscordAdminRoles": [
+      "Admins"
+    ],
+    "ComForbiddenChannels": [],
+    "ComAllowedChannels": [],
+    "Language": "en-US",
+    "UseEnglishESIOnly": true,
+    "ModuleAuthCheck": true,
+    "ModuleAuthWeb": true,
+    "ModuleCharCorp": true,
+    "ModuleLiveKillFeed": false,
+    "ModulePriceCheck": true,
+    "ModuleTime": true,
+    "ModuleJabber": false,
+    "ModuleMOTD": false,
+    "ModuleNotificationFeed": true,
+    "ModuleTimers": false,
+    "ModuleMail": false,
+    "ModuleIRC": false,
+    "ModuleTelegram": false,
+    "ModuleChatRelay": false,
+    "ModuleIncursionNotify": false,
+    "ModuleNullsecCampaign": false,
+    "ModuleFWStats": false,
+    "ModuleLPStock": false,
+    "ModuleHRM": false,
+    "ModuleSystemLogFeeder": false,
+    "ModuleStats": false,
+    "ModuleContractNotifications": false,
+    "ModuleSovTracker": false,
+    "ModuleWebConfigEditor": false,
+    "ModuleIndustrialJobs": false,
+    "ModuleMiningSchedule": false,
+    "ModuleStructureManagement": false,
+    "ModuleMoonTable": false,
+    "ModuleStorageConsole": false,
+    "ModuleRemind": false,
+    "ModuleFitChecker": false,
+    "TimeFormat": "dd.MM.yyyy HH:mm:ss",
+    "ShortTimeFormat": "dd.MM.yyyy HH:mm",
+    "DateFormat": "dd.MM.yyyy",
+    "WelcomeMessage": true,
+    "WelcomeMessageChannelId": 0,
+    "CachePurgeInterval": 30,
+    "MemoryUsageLimitMb": 100,
+    "LogSeverity": "Info",
+    "UseSingleFileForLogging": false,
+    "LogNewNotifications": true,
+    "RequestRetries": 3,
+    "ConcurrentThreadsCount": 4,
+    "ExtendedESILogging": false,
+    "ESIAddress": "https://esi.evetech.net/",
+    "RunAsServiceCompatibility": false,
+    "DisableLogIntoFiles": false,
+    "LanguageFilesFolder": "",
+    "EnableLegacyRestartLogic": false,
+    "EnableSwatch": true,
+    "WebSessionTimeout": 60
+  },
+  "CommandsConfig": {
+    "ShipsCommandDiscordRoles": [],
+    "ShipsCommandDiscordChannels": [],
+    "EnableShipsCommand": false,
+    "EnableRoleManagementCommands": false,
+    "RolesCommandDiscordRoles": [
+      "DiscordRole"
+    ],
+    "RolesCommandAllowedRoles": [
+      "Admins"
+    ],
+    "RolesCommandDiscordChannels": []
+  },
+  "WebServerModule": {
+    "UsePortInUrl": true,
+    "WebExternalIP": "localhost",
+    "WebExternalPort": 8000,
+    "ServerStatusPort": 0,
+    "NoStatusResponseOnDiscordDisconnection": true,
+    "DiscordUrl": "https://discord.gg/NjsPACkk5b",
+    "CcpAppClientId": "",
+    "CcpAppSecret": "",
+    "UseHTTPS": false,
+    "CertificatePath": "",
+    "CertificatePassword": "",
+    "CertificateStorageName": "",
+    "ZkbUrl": ""
+  },
+  "WebAuthModule": {
+    "AuthCheckIntervalMinutes": 60,
+    "AuthTakeNumberOfUsersPerPass": 100,
+    "StandingsRefreshIntervalInMinutes": 60,
+    "DisplayFeedAuthWithoutRegistration": true,
+    "AuthReportChannel": 0,
+    "EnforceCorpTickers": false,
+    "EnforceAllianceTickers": false,
+    "EnforceSingleTickerPerUser": false,
+    "EnforceCharName": false,
+    "DefaultAuthGroup": "1",
+    "UseOneAuthButton": false,
+    "EnableDetailedLogging": false,
+    "AuthButtonDiscordText": "Discord Auth",
+    "AutoClearAuthCommandsFromDiscord": false,
+    "AuthCheckUnregisteredDiscordUsers": false,
+    "ExemptDiscordRoles": [
+      "Admins"
+    ],
+    "AuthCheckIgnoreRoles": [
+      "CustomDiscordRoleToSkipOnAuthCheck"
+    ],
+    "ComAuthChannels": [],
+    "AuxiliaryDiscordGuildIds": [],
+    "AuthGroups": {}
+  },
+  "ChatRelayModule": {
+    "RelayChannels": [
+      {
+        "EVEChannelName": "EVE channel name",
+        "DiscordChannelId": 0,
+        "Code": "thesecretsupercode"
+      }
+    ]
+  },
+  "IncursionNotificationModule": {
+    "DiscordChannelId": 0,
+    "DefaultMention": "@everyone",
+    "LocationEntities": []
+  },
+  "IrcModule": {
+    "Server": "chat.freenode.net",
+    "Port": 6667,
+    "UseSSL": false,
+    "Password": null,
+    "Nickname": "DefaultUser-TH",
+    "Nickname2": null,
+    "Username": "DefaultUser-TH",
+    "Realname": "realname",
+    "Invisible": true,
+    "AutoReconnect": true,
+    "AutoReconnectDelay": 5000,
+    "AutoRejoinOnKick": false,
+    "QuitReason": "Leaving",
+    "SuppressMOTD": true,
+    "SuppressPing": false,
+    "ConnectCommands": [],
+    "RelayChannels": [
+      {
+        "IRC": "#mychannel",
+        "Discord": 0,
+        "RelayFromDiscordBotOnly": false,
+        "DiscordFilters": [
+          "!auth",
+          "/join"
+        ],
+        "DiscordFiltersStartsWith": [
+          "!"
+        ],
+        "IRCFilters": [],
+        "IRCFiltersStartsWith": [
+          "/"
+        ],
+        "IRCUsers": []
+      }
+    ],
+    "AutoJoinWaitIdentify": false
+  },
+  "NotificationFeedModule": {
+    "CheckIntervalInMinutes": 2,
+    "AuthButtonDiscordText": "Notifications Auth",
+    "Groups": {
+      "groupName1": {
+        "IsEnabled": true,
+        "DefaultDiscordChannelID": 794260497737580607,
+        "FetchLastNotifDays": 0,
+        "Filters": {
+          "filter1": {
+            "ChannelID": 0,
+            "DefaultMention": "@everyone",
+            "SpecialSettings": {
+              "DoNotReportNpcBashForCitadels": false
+            },
+            "Notifications": [
+              "StructureUnderAttack",
+              "StructureWentLowPower",
+              "StructureWentHighPower",
+              "StructureLostArmor",
+              "StructureLostShields",
+              "StructureFuelAlert",
+              "StructureOnline",
+              "StructureAnchoring",
+              "StructureUnanchoring",
+              "StructureDestroyed",
+              "OrbitalAttacked",
+              "OrbitalReinforced",
+              "AllAnchoringMsg",
+              "AllWarDeclaredMsg",
+              "AllWarInvalidatedMsg",
+              "AllyJoinedWarAggressorMsg",
+              "AllyJoinedWarAllyMsg",
+              "AllyJoinedWarDefenderMsg",
+              "AllWarRetractedMsg",
+              "AllWarSurrenderMsg",
+              "CorpWarRetractedMsg",
+              "CorpWarDeclaredMsg",
+              "AcceptedSurrender",
+              "CharLeftCorpMsg",
+              "CharAppAcceptMsg",
+              "SovAllClaimAquiredMsg",
+              "SovAllClaimLostMsg",
+              "SovereigntyIHDamageMsg",
+              "SovereigntySBUDamageMsg",
+              "SovereigntyTCUDamageMsg",
+              "StationConquerMsg",
+              "SovStructureDestroyed",
+              "SovStationEnteredFreeport",
+              "SovCommandNodeEventStarted",
+              "SovStructureReinforced",
+              "StationServiceDisabled",
+              "EntosisCaptureStarted",
+              "MoonminingExtractionFinished",
+              "MoonminingLaserFired",
+              "MoonminingAutomaticFracture",
+              "MoonminingExtractionStarted",
+              "MoonminingExtractionCancelled",
+              "FWAllianceWarningMsg",
+              "CorpAppNewMsg",
+              "CharAppWithdrawMsg",
+              "WarAdopted",
+              "WarAllyInherited",
+              "WarConcordInvalidates",
+              "WarDeclared",
+              "WarHQRemovedFromSpace",
+              "WarInherited",
+              "WarInvalid",
+              "WarRetracted",
+              "WarRetractedByConcord",
+              "CorpBecameWarEligible",
+              "CorpNoLongerWarEligible",
+              "MutualWarExpired",
+              "MutualWarInviteAccepted",
+              "MutualWarInviteRejected",
+              "MutualWarInviteSent",
+              "AllianceWarDeclaredV2",
+              "CorpWarDeclaredV2",
+              "AllMaintenanceBillMsg",
+              "BillOutOfMoneyMsg",
+              "AllianceCapitalChanged",
+              "BountyPlacedAlliance",
+              "CorpKicked",
+              "CorpNewCEOMsg",
+              "CorpTaxChangeMsg",
+              "OwnershipTransferred",
+              "StructureImpendingAbandonmentAssetsAtRisk",
+              "TowerResourceAlertMsg",
+              "TowerAlertMsg"
+            ],
+            "CharMentions": [],
+            "RoleMentions": []
+          }
+        },
+        "CharacterEntities": [
+          996789458,
+          2119503627,
+          2114615369,
+          90626534,
+          2116958203,
+          958226702,
+          2118839821,
+          2119503627,
+          2118048184
+        ]
+      }
+    },
+    "Tracker": {
+      "Groups": {
+        "Group1": {
+          "Notifications": [],
+          "DiscordChannels": [],
+          "FilterOut": [
+            "text to filter out"
+          ],
+          "FeedFromAllRegisteredUsers": false,
+          "IsEnabled": false
+        }
+      },
+      "GlobalFilterOut": [
+        "Name part to filter out"
+      ],
+      "GlobalFilterIn": [],
+      "UpdateIntervalInMinutes": 5,
+      "SkipCharactersInNpcCorps": true
+    }
+  },
+  "NullCampaignModule": {
+    "CheckIntervalInMinutes": 1,
+    "Groups": {
+      "groupName1": {
+        "IsEnabled": true,
+        "LocationEntities": [],
+        "Announces": [],
+        "Mentions": [],
+        "DefaultMention": "@everyone",
+        "ReportNewCampaign": true,
+        "DiscordChannelId": 0
+      }
+    }
+  },
+  "TelegramModule": {
+    "Token": "YOUR TOKEN",
+    "ProxyAddress": "0",
+    "ProxyPort": 0,
+    "ProxyUsername": "",
+    "ProxyPassword": "",
+    "RelayFromDiscord": true,
+    "RelayFromTelegram": true,
+    "RelayChannels": [
+      {
+        "Telegram": 0,
+        "Discord": 0,
+        "RelayFromDiscordBotOnly": false,
+        "DiscordFilters": [
+          "!auth",
+          "/join"
+        ],
+        "DiscordAllowFilters": [
+          "@"
+        ],
+        "DiscordFiltersStartsWith": [
+          "!"
+        ],
+        "TelegramFilters": [],
+        "TelegramFiltersStartsWith": [
+          "/"
+        ],
+        "TelegramUsers": []
+      }
+    ]
+  },
+  "MailModule": {
+    "CheckIntervalInMinutes": 2,
+    "Groups": {
+      "Group1": {
+        "IsEnabled": true,
+        "IncludePrivateMail": true,
+        "CharacterEntities": [],
+        "Filters": {
+          "CorpMailFilter": {
+            "FilterLabels": [
+              "[Corp]",
+              "[Alliance]"
+            ],
+            "FilterSenders": [],
+            "FilterMailList": [
+              "TestList"
+            ],
+            "FeedChannel": 0,
+            "DisplayDetailsSummary": true
+          },
+          "MailListFilter": {
+            "FilterLabels": [],
+            "FilterSenders": [],
+            "FilterMailList": [
+              "TestList"
+            ],
+            "FeedChannel": 0,
+            "DisplayDetailsSummary": false
+          }
+        },
+        "DefaultChannel": 0,
+        "DefaultMention": ""
+      }
+    }
+  },
+  "TimersModule": {
+    "AutoAddTimerForReinforceNotifications": true,
+    "AuthTimeoutInMinutes": 10,
+    "TinyUrl": "",
+    "TimeInputFormat": "DD.MM.YYYY HH:mm",
+    "DefaultMention": "@everyone",
+    "Announces": [
+      60,
+      10
+    ],
+    "AnnounceChannel": 0,
+    "GrantEditRolesToDiscordAdmins": true,
+    "AuthButtonDiscordText": "Timers Page",
+    "AccessList": {
+      "group1": {
+        "FilterEntities": [
+          "Character Name",
+          "a:Alliance Name",
+          "c:Corporation Name",
+          795045209
+        ],
+        "FilterDiscordRoles": [
+          "role1",
+          "role2"
+        ]
+      }
+    },
+    "EditList": {
+      "group1": {
+        "FilterEntities": [],
+        "FilterDiscordRoles": []
+      }
+    }
+  },
+  "LiveKillFeedModule": {
+    "StopOnFirstGroupMatch": false,
+    "Groups": {
+      "exampleGroup": {
+        "IsEnabled": false,
+        "ShowGroupName": false,
+        "FeedPvpKills": true,
+        "FeedPveKills": true,
+        "FeedAwoxKills": true,
+        "FeedNotAwoxKills": true,
+        "FeedSoloKills": true,
+        "FeedGroupKills": true,
+        "FeedUrlsOnly": false,
+        "StopOnFirstFilterMatch": true,
+        "FeedOnlyKillsWithRegisteredUsers": false,
+        "MessageTemplateFileName": "Template.killMailGeneral.txt",
+        "DiscordChannels": [
+          567625555843743754,
+          567625555843743756
+        ],
+        "Filters": {
+          "killFeedExample": {
+            "MinimumIskValue": 10000000.0,
+            "MaximumIskValue": 40000000000.0,
+            "EnableStrictPartiesCheck": false,
+            "EnableStrictShipTypesCheck": false,
+            "EnableMatchOnFirstConditionMet": false,
+            "ShowHighsecSystem": true,
+            "ShowLowsecSystem": true,
+            "ShowNullsecSystem": true,
+            "ShowWormholeSystem": true,
+            "ShowAbyssSystem": true,
+            "Radius": 0,
+            "DiscordChannels": [],
+            "HasAttackerShipEntities": [
+              "Nyx",
+              "Hel",
+              "Aeon",
+              "Wyvern"
+            ],
+            "HasNoAttackerShipEntities": [],
+            "HasVictimShipEntities": [],
+            "HasNoVictimrShipEntities": [],
+            "HasVictimEntities": [],
+            "HasNoVictimEntities": [],
+            "HasAttackerEntities": [
+              "a:TAPI"
+            ],
+            "HasNoAttackerEntities": [],
+            "HasLocationEntities": [],
+            "HasNoLocationEntities": []
+          },
+          "killFeedExample2": {
+            "MinimumIskValue": 0.0,
+            "MaximumIskValue": 0.0,
+            "EnableStrictPartiesCheck": false,
+            "EnableStrictShipTypesCheck": false,
+            "EnableMatchOnFirstConditionMet": false,
+            "ShowHighsecSystem": true,
+            "ShowLowsecSystem": true,
+            "ShowNullsecSystem": true,
+            "ShowWormholeSystem": true,
+            "ShowAbyssSystem": true,
+            "Radius": 0,
+            "DiscordChannels": [
+              567625555843743757
+            ],
+            "HasAttackerShipEntities": [],
+            "HasNoAttackerShipEntities": [],
+            "HasVictimShipEntities": [],
+            "HasNoVictimrShipEntities": [],
+            "HasVictimEntities": [
+              "a:Test Alliance Please Ignore"
+            ],
+            "HasNoVictimEntities": [],
+            "HasAttackerEntities": [
+              "a:Test Alliance Please Ignore"
+            ],
+            "HasNoAttackerEntities": [],
+            "HasLocationEntities": [],
+            "HasNoLocationEntities": []
+          },
+          "killFeedExample3": {
+            "MinimumIskValue": 0.0,
+            "MaximumIskValue": 0.0,
+            "EnableStrictPartiesCheck": true,
+            "EnableStrictShipTypesCheck": false,
+            "EnableMatchOnFirstConditionMet": false,
+            "ShowHighsecSystem": true,
+            "ShowLowsecSystem": true,
+            "ShowNullsecSystem": true,
+            "ShowWormholeSystem": true,
+            "ShowAbyssSystem": true,
+            "Radius": 0,
+            "DiscordChannels": [],
+            "HasAttackerShipEntities": [],
+            "HasNoAttackerShipEntities": [],
+            "HasVictimShipEntities": [],
+            "HasNoVictimrShipEntities": [],
+            "HasVictimEntities": [
+              "a:Goonswarm Federation"
+            ],
+            "HasNoVictimEntities": [],
+            "HasAttackerEntities": [
+              "a:TAPI"
+            ],
+            "HasNoAttackerEntities": [],
+            "HasLocationEntities": [],
+            "HasNoLocationEntities": []
+          },
+          "killFeedExample4": {
+            "MinimumIskValue": 0.0,
+            "MaximumIskValue": 0.0,
+            "EnableStrictPartiesCheck": false,
+            "EnableStrictShipTypesCheck": false,
+            "EnableMatchOnFirstConditionMet": false,
+            "ShowHighsecSystem": true,
+            "ShowLowsecSystem": true,
+            "ShowNullsecSystem": true,
+            "ShowWormholeSystem": true,
+            "ShowAbyssSystem": true,
+            "Radius": 0,
+            "DiscordChannels": [],
+            "HasAttackerShipEntities": [],
+            "HasNoAttackerShipEntities": [],
+            "HasVictimShipEntities": [],
+            "HasNoVictimrShipEntities": [],
+            "HasVictimEntities": [
+              "a:TAPI"
+            ],
+            "HasNoVictimEntities": [],
+            "HasAttackerEntities": [
+              "a:TAPI"
+            ],
+            "HasNoAttackerEntities": [],
+            "HasLocationEntities": [],
+            "HasNoLocationEntities": [
+              "Jita"
+            ]
+          },
+          "radiusFeedExample1": {
+            "MinimumIskValue": 0.0,
+            "MaximumIskValue": 0.0,
+            "EnableStrictPartiesCheck": false,
+            "EnableStrictShipTypesCheck": false,
+            "EnableMatchOnFirstConditionMet": false,
+            "ShowHighsecSystem": true,
+            "ShowLowsecSystem": true,
+            "ShowNullsecSystem": true,
+            "ShowWormholeSystem": true,
+            "ShowAbyssSystem": true,
+            "Radius": 3,
+            "DiscordChannels": [],
+            "HasAttackerShipEntities": [],
+            "HasNoAttackerShipEntities": [],
+            "HasVictimShipEntities": [],
+            "HasNoVictimrShipEntities": [],
+            "HasVictimEntities": [
+              "a:Goonswarm Federation"
+            ],
+            "HasNoVictimEntities": [],
+            "HasAttackerEntities": [],
+            "HasNoAttackerEntities": [],
+            "HasLocationEntities": [
+              "Jita"
+            ],
+            "HasNoLocationEntities": []
+          },
+          "radiusFeedExample2": {
+            "MinimumIskValue": 0.0,
+            "MaximumIskValue": 0.0,
+            "EnableStrictPartiesCheck": false,
+            "EnableStrictShipTypesCheck": false,
+            "EnableMatchOnFirstConditionMet": false,
+            "ShowHighsecSystem": true,
+            "ShowLowsecSystem": true,
+            "ShowNullsecSystem": true,
+            "ShowWormholeSystem": true,
+            "ShowAbyssSystem": true,
+            "Radius": 0,
+            "DiscordChannels": [],
+            "HasAttackerShipEntities": [],
+            "HasNoAttackerShipEntities": [],
+            "HasVictimShipEntities": [],
+            "HasNoVictimrShipEntities": [],
+            "HasVictimEntities": [
+              "a:INIT."
+            ],
+            "HasNoVictimEntities": [],
+            "HasAttackerEntities": [],
+            "HasNoAttackerEntities": [],
+            "HasLocationEntities": [
+              "Black Rise",
+              "Taurus"
+            ],
+            "HasNoLocationEntities": []
+          },
+          "radiusFeedExample3": {
+            "MinimumIskValue": 0.0,
+            "MaximumIskValue": 0.0,
+            "EnableStrictPartiesCheck": false,
+            "EnableStrictShipTypesCheck": false,
+            "EnableMatchOnFirstConditionMet": false,
+            "ShowHighsecSystem": true,
+            "ShowLowsecSystem": true,
+            "ShowNullsecSystem": true,
+            "ShowWormholeSystem": true,
+            "ShowAbyssSystem": true,
+            "Radius": 0,
+            "DiscordChannels": [],
+            "HasAttackerShipEntities": [],
+            "HasNoAttackerShipEntities": [],
+            "HasVictimShipEntities": [],
+            "HasNoVictimrShipEntities": [],
+            "HasVictimEntities": [],
+            "HasNoVictimEntities": [
+              "a:INIT."
+            ],
+            "HasAttackerEntities": [],
+            "HasNoAttackerEntities": [],
+            "HasLocationEntities": [
+              "Fountain"
+            ],
+            "HasNoLocationEntities": []
+          }
+        }
+      }
+    }
+  },
+  "Resources": {
+    "ImgCitLowPower": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgCitLowPower.png",
+    "ImgCitUnderAttack": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgCitUnderAttack.png",
+    "ImgCitAnchoring": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgCitAnchoring.png",
+    "ImgCitDestroyed": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgCitDestroyed.png",
+    "ImgCitLostShield": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgCitLostShield.png",
+    "ImgCitLostArmor": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgCitLostArmor.png",
+    "ImgCitOnline": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgCitOnline.png",
+    "ImgCitFuelAlert": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgCitFuelAlert.png",
+    "ImgCitServicesOffline": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgCitServicesOffline.png",
+    "ImgLowFWStand": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgLowFWStand.png",
+    "ImgMoonComplete": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgMoonComplete.png",
+    "ImgWarAssist": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgWarAssist.png",
+    "ImgWarDeclared": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgWarDeclared.png",
+    "ImgWarInvalidate": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgWarInvalidate.png",
+    "ImgWarSurrender": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgWarSurrender.png",
+    "ImgTimerAlert": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgTimerAlert.png",
+    "ImgMail": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgMail.png",
+    "ImgIncursion": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgIncursion.png",
+    "ImgFactionCaldari": "https://wiki.eveuniversity.org/images/e/e3/Logo_faction_caldari_state.png",
+    "ImgFactionGallente": "https://wiki.eveuniversity.org/images/b/b9/Logo_faction_gallente_federation.png",
+    "ImgFactionAmarr": "https://wiki.eveuniversity.org/images/a/a0/Logo_faction_amarr_empire.png",
+    "ImgFactionMinmatar": "https://wiki.eveuniversity.org/images/1/1f/Logo_faction_minmatar_republic.png",
+    "ImgEntosisAlert": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgEntosisAlert.png",
+    "ImgContract": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgContract.png",
+    "ImgContractDelete": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgContractDelete.png",
+    "ImgNoLongerWarEligible": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgNoLongerWarEligible.png",
+    "ImgBecameWarEligible": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgBecameWarEligible.png",
+    "ImgWarInviteAccepted": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgWarInviteAccepted.png",
+    "ImgWarInviteRejected": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgWarInviteRejected.png",
+    "ImgWarInviteSent": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgWarInviteSent.png",
+    "ImgAllMaintenanceBillMsg": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgAllMaintenanceBillMsg.png",
+    "ImgBillOutOfMoneyMsg": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgBillOutOfMoneyMsg.png",
+    "ImgAllianceCapitalChanged": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgAllianceCapitalChanged.png",
+    "ImgBountyPlacedAlliance": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgBountyPlacedAlliance.png",
+    "ImgCorpKicked": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgCorpKicked.png",
+    "ImgCorpNewCEOMsg": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgCorpNewCEOMsg.png",
+    "ImgCorpTaxChangeMsg": "https://raw.githubusercontent.com/panthernet/ThunderED/master/ThunderED/Content/Icons/imgCorpTaxChangeMsg.png"
+  },
+  "JabberModule": {
+    "Domain": "example.com",
+    "Username": "username",
+    "Password": "password",
+    "Filter": false,
+    "Debug": false,
+    "DefChan": 0,
+    "Filters": {
+      "SUPER": 0,
+      "BLOPS": 0
+    },
+    "Prepend": "@here"
+  },
+  "HRMModule": {
+    "AccessList": {
+      "accessList1": {
+        "UsersAccessList": [],
+        "RolesAccessList": [],
+        "AuthGroupNamesFilter": [],
+        "AuthAllianceIdFilter": [],
+        "AuthCorporationIdFilter": [],
+        "IsEnabled": true,
+        "ApplyGroupFilterToAwaitingUsers": false,
+        "IsAwaitingUsersVisible": true,
+        "IsDumpedUsersVisible": true,
+        "IsAuthedUsersVisible": true,
+        "IsAltUsersVisible": true,
+        "IsSpyUsersVisible": true,
+        "CanSearchMail": true,
+        "CanKickUsers": true,
+        "CanMoveToSpies": true,
+        "CanInspectAuthedUsers": true,
+        "CanInspectAwaitingUsers": true,
+        "CanInspectDumpedUsers": true,
+        "CanInspectSpyUsers": true,
+        "CanInspectAltUsers": true,
+        "CanRestoreDumped": true,
+        "CanSeeIP": false,
+        "CanFetchToken": false
+      }
+    },
+    "SpyFilters": {
+      "filter1": {
+        "CorporationNames": [
+          "Corp Name1",
+          "Corp Name 2"
+        ],
+        "AllianceNames": [],
+        "MailFeedChannelId": 0,
+        "DisplayMailDetailsSummary": true
+      }
+    },
+    "AuthTimeoutInMinutes": 30,
+    "TableEntriesPerPage": 10,
+    "TableSkillEntriesPerPage": 20,
+    "UseDumpForMembers": true,
+    "DumpInvalidationInHours": 240,
+    "DefaultSpiesMailFeedChannelId": 0,
+    "ValidateTokensWhileLoading": true,
+    "AuthButtonDiscordText": "HR auth"
+  },
+  "SystemLogFeederModule": {
+    "DiscordChannelId": 0,
+    "LogSeverity": "Info",
+    "SendInterval": 5000
+  },
+  "StatsModule": {
+    "EnableStatsCommand": true,
+    "RatingModeChannelId": 0,
+    "DailyStatsGroups": {
+      "group1": {
+        "IsEnabled": false,
+        "DailyStatsChannel": 0,
+        "DailyStatsCorp": 0,
+        "DailyStatsAlliance": 0,
+        "IncludeInRating": false
+      }
+    }
+  },
+  "MiningScheduleModule": {
+    "AuthButtonDiscordText": "Mining Schedule Auth",
+    "AuthAccessEntities": [],
+    "AuthAccessDiscordRoles": [],
+    "Extractions": {
+      "ViewAccessEntities": [],
+      "ViewAccessDiscordRoles": [],
+      "ComplexAccess": {
+        "AccessEntry1": {
+          "Entities": [],
+          "DiscordRoles": [],
+          "StructureNames": [],
+          "CanManageOwnCorporation": false
+        }
+      }
+    },
+    "Ledger": {
+      "ViewAccessEntities": [],
+      "ViewAccessDiscordRoles": [],
+      "ComplexAccess": {
+        "AccessEntry1": {
+          "Entities": [],
+          "DiscordRoles": [],
+          "StructureNames": [],
+          "CanManageOwnCorporation": false
+        }
+      }
+    }
+  },
+  "MoonTableModule": {
+    "ViewAccessEntities": [],
+    "ViewAccessDiscordRoles": [],
+    "LimitedAccessEntities": [],
+    "LimitedAccessDiscordRoles": []
+  },
+  "StorageConsoleModule": {
+    "NameFormattingLength": 20,
+    "ListAccessRoles": [],
+    "EditAccessRoles": []
+  },
+  "Database": {
+    "DatabaseProvider": "sqlite",
+    "DatabaseFile": "edb.db",
+    "ServerAddress": "",
+    "ServerPort": 0,
+    "DatabaseName": "",
+    "UserId": "",
+    "Password": "",
+    "CustomConnectionString": "",
+    "SqliteBackupFrequencyInHours": 8,
+    "SqliteBackupMaxFiles": 10
+  },
+  "ContinousCheckModule": {
+    "EnableTQStatusPost": true,
+    "TQStatusPostMention": "@here",
+    "TQStatusPostChannels": []
+  },
+  "ContractNotificationsModule": {
+    "CheckIntervalInMinutes": 1,
+    "MaxTrackingCount": 150,
+    "UseOneAuthButton": false,
+    "AuthButtonDiscordText": "Contracts Auth",
+    "Groups": {
+      "group1": {
+        "CharacterEntities": [],
+        "Filters": {
+          "defaultFilter": {
+            "Availability": [
+              "public",
+              "personal",
+              "corporation",
+              "alliance"
+            ],
+            "Types": [
+              "unknown",
+              "item_exchange",
+              "auction",
+              "courier",
+              "loan"
+            ],
+            "Statuses": [
+              "finished_issuer",
+              "finished_contractor",
+              "finished",
+              "cancelled",
+              "rejected",
+              "failed",
+              "deleted",
+              "reversed",
+              "in_progress",
+              "outstanding"
+            ],
+            "DiscordChannelId": 0,
+            "FeedIssuedBy": true,
+            "FeedIssuedTo": true,
+            "ShowIngameOpen": false,
+            "ShowOnlyBasicDetails": false,
+            "RedirectByIdInDescription": false,
+            "PostToChannelIfRedirected": false
+          }
+        },
+        "FeedPersonalContracts": true,
+        "FeedCorporateContracts": true,
+        "ButtonText": "Default Contracts Auth",
+        "StopOnFirstFilterMatch": false,
+        "DefaultMention": "",
+        "IsEnabled": false
+      }
+    }
+  },
+  "SovTrackerModule": {
+    "CheckIntervalInMinutes": 60,
+    "Groups": {
+      "groupName1": {
+        "IsEnabled": true,
+        "AdmIndexCheckTimeOfTheDay": "07:00:00",
+        "AdmDisplaySummary": true,
+        "LocationEntities": [],
+        "HolderAllianceEntities": [],
+        "DiscordMentions": [],
+        "WarningThresholdValue": 1.0,
+        "DiscordChannelId": 0,
+        "TrackADMIndexChanges": true,
+        "TrackTCUHolderChanges": true,
+        "TrackIHUBHolderChanges": true
+      }
+    }
+  },
+  "WebConfigEditorModule": {
+    "AccessList": {
+      "DefaultList": {
+        "AllowedEntities": [
+          "R I O T"
+        ],
+        "AllowedDiscordRoles": [
+          "Admins"
+        ],
+        "CanEditTimers": true,
+        "CanEditSettings": true,
+        "IsEnabled": true
+      },
+      "ExampleList": {
+        "AllowedEntities": [
+          "SvendHansen",
+          "a:R I O T",
+          "c:The Priesthood"
+        ],
+        "AllowedDiscordRoles": [
+          "Admins"
+        ],
+        "CanEditTimers": true,
+        "CanEditSettings": true,
+        "IsEnabled": true
+      }
+    },
+    "AuthButtonDiscordText": "Settings"
+  },
+  "ZKBSettingsModule": {
+    "ZKillboardWebSocketUrl": "wss://zkillboard.com/websocket/",
+    "AvoidDupesAcrossAllFeeds": false,
+    "OldKMDaysThreshold": 2
+  },
+  "IndustrialJobsModule": {
+    "CheckIntervalInMinutes": 5,
+    "UseOneAuthButton": false,
+    "AuthButtonDiscordText": "Industry Auth",
+    "Groups": {
+      "groupName1": {
+        "IsEnabled": true,
+        "ButtonText": "Industry Auth",
+        "CharacterEntities": [],
+        "DiscordChannels": [],
+        "Filters": {
+          "filter1": {
+            "FeedPersonalJobs": true,
+            "FeedCorporateJobs": true,
+            "FeedStartingJobs": true,
+            "FeedCancelledJobs": true,
+            "FeedReadyJobs": true,
+            "FeedDeliveredJobs": true,
+            "FeedPausedJobs": true,
+            "FeedRevertedJobs": true,
+            "FeedResearchJobs": true,
+            "FeedCopyingJobs": true,
+            "FeedInventionJobs": true,
+            "FeedReactionJobs": true,
+            "FeedBuildJobs": true,
+            "DiscordChannels": []
+          }
+        }
+      }
+    }
+  },
+  "StructureManagementModule": {
+    "AuthButtonDiscordText": "Structure Management Auth",
+    "ViewAccessEntities": [],
+    "ViewAccessDiscordRoles": [],
+    "AuthAccessEntities": [],
+    "AuthAccessDiscordRoles": [],
+    "ComplexAccess": {
+      "AccessEntry1": {
+        "Entities": [],
+        "DiscordRoles": [],
+        "StructureNames": [],
+        "CanManageOwnCorporation": false,
+        "CustomNotifications": {
+          "UnanchoringHours": [
+            1,
+            24
+          ],
+          "UnanchoringDiscordChannelIds": []
+        }
+      }
+    }
+  },
+  "FitCheckerModule": {
+    "AccessGroups": {
+      "group1": {
+        "IsEnabled": true,
+        "AccessDiscordRoles": [],
+        "AccessEntities": []
+      }
+    }
+  }
+}
